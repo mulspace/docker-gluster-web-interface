@@ -16,4 +16,4 @@ docker pull mulspace/gluster-web-interface
 docker run -it -p 3000:3000 mulspace/gluster-web-interface
 ```
 
-Please open http://&lt;ip address&gt;:3000/ by browser to access gluster-web-interface.
+Please open http://localhost:3000/ by browser to access gluster-web-interface.
