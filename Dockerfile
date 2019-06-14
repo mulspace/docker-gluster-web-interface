@@ -14,6 +14,9 @@ RUN apt-get update && apt-get upgrade -y && \
 
 WORKDIR /gluster-web
 
+# Fix the build issue
+RUN echo "gem 'tzinfo-data'" >> Gemfile
+
 RUN bower install --allow-root && \
 	bundle install && \
 	bin/rake db:migrate && \
